@@ -1,9 +1,7 @@
 var moveZeros = function (arr) {
     // TODO: Program me
     console.log(arr);
-    let arreglo = arr.filter(function (x) {
-        return x!==0;
-    });
+    let arreglo = arr.filter( x =);
     console.log(arreglo);
     return ;
 }

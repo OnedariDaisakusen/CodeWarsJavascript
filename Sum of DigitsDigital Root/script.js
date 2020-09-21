@@ -1,17 +1,20 @@
 function digital_root(n) {
     // ...
     
-    console.log(n.toString().length);
-
-    while (n.toString().length>1) {
-        let arreglo = n.toString().split("");
-        n = arreglo.reduce(function (params) {
-            
-        })
+    let arreglo = n.toString().split("");
+    let numero = 0;
+    while (arreglo.length>1) {
+        numero = arreglo.reduce(function (a,b) {
+            return parseInt(a) + parseInt(b);
+        });
+        arreglo = numero.toString().split("");
     }
+    return numero;
 }
 
 
 
-digital_root(15);
+let suma =  digital_root(493193);
+
+console.log(suma);
 
